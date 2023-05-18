@@ -1,0 +1,138 @@
+.validate-form {
+    width: 600px;
+    margin: auto;
+}
+
+.form-group__input {
+    border-radius: 4px;
+    padding: 6px 12px;
+    width: 280px;
+}
+
+.form-group__button {
+    color: #fff;
+    background-color: #5EB462;
+    border: 1px solid #1c691c;
+    border-radius: 4px;
+    width: auto;
+    box-sizing: border-box;
+    padding: 7px;
+    margin: auto;
+    cursor: pointer;
+}
+.cards {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.cards-item {
+    display: flex;
+    padding: 5px;
+}
+
+.card {
+    width: 50px;
+    height: 30px;
+    text-indent: -9999px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.visa {
+    background-image: url(../img/visa.jpg);
+}
+
+.master {
+    background-image: url(../img/mastercard.jpg);
+}
+
+.mir {
+    background-image: url(../img/mir.jpg);
+}
+
+.amex {
+    background-image: url(../img/amex.jpg);
+}
+
+.discover {
+    background-image: url(../img/discover.jpg);
+}
+
+.jcb {
+    background-image: url(../img/jcb.jpg);
+}
+
+.diners_club {
+    background-image: url(../img/diners_club.jpg);
+}
+
+.form-group {
+    position: relative;
+}
+
+
+.result-validate {
+    padding: 10px 0;
+    display: none;
+}
+
+.result-validate::before {
+    content: "";
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.luhn-succes::before {
+    background-image: url(../img/checked.png);
+}
+
+.luhn-error::before {
+    background-image: url(../img/unchecked.png);
+}
+
+.no-bank::before {
+    content: none;
+}
+
+.tooltip {
+    position: absolute;
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+    left: 24.85px;
+    display: none;
+}
+
+.tooltip::after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    margin-left: -10px;
+    left: 50%;
+    border-bottom: 10px solid #000;
+    top: -10px;
+}
+
+.cards-opacity {
+    opacity: 0.2;
+}
+
+.no-bank {
+    display: none;
+    font-style: italic;
+}
+
+.display {
+    display: block;
+}
